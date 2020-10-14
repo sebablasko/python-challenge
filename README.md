@@ -6,7 +6,7 @@ El objetivo de este desafío es validar tus habilidades lógicas y conocimientos
 
 El desafío se separa en los tres ámbitos que te tocará abordar en tu rol: Web Scraping, Extracción de información y Procesamiento de Lenguaje Natural
 
-Este desafío cuenta de dos partes independientes. Si no logras realizar alguna de ellas envía de todas formas tus respuestas de las otras partes. Envía tus resultados en forma de repositorio en Github.
+Este desafío cuenta de tres partes independientes. Si no logras realizar alguna de ellas envía de todas formas tus respuestas de las otras partes. Envía tus resultados en forma de repositorio en Github.
 
 ## Parte 1: Web Scraping
 
