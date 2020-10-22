@@ -4,6 +4,8 @@
 
 Utilicé `urllib.request` para las peticiones http y `BeautifulSoup` para el parseo y naavegación en el cuerpo http. Adjunto los pdf descargados y tambièn el còdigo del bonus.
 
+Para los días que disponibilizaban más de una versión, se están inspeccionando todas las disponibles.
+
 ## Parte 2: Extracción de información
 
 Utilicé `PyPDF2` para procesar los pdf y extraer el texto. Tal cual como indicaban no los convertí a imagen. Algunas notas que incluí en el archivo mismo de la solución respecto a las preguntas de esta parte:
