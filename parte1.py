@@ -19,13 +19,13 @@ def download_constituciones_by_date(path, queriedDate):
          queried = link['href'].split('edition=')[1]
          [edition, version] = queried.split("&v=")
          finalUrl = fullUrlBuilder(queriedDate, edition, version)
-         extract_and_donwload_pdf(path, finalUrl)
+         locate_and_donwload_pdfs(path, finalUrl)
    else:
       hasEdition = len(page.url.split('edition=')) > 1
       if hasEdition:
          edition = page.url.split('edition=')[1]
          finalUrl = fullUrlBuilder(queriedDate, edition)
-         extract_and_donwload_pdf(path, finalUrl)
+         locate_and_donwload_pdfs(path, finalUrl)
       else:
          print("nothing for %s" % queriedDate)
 
@@ -37,7 +37,7 @@ def fullUrlBuilder(queriedDate, edition = False, version = False):
       baseUrl = '%s&v=%s' % (baseUrl, version)
    return baseUrl
 
-def extract_and_donwload_pdf(path, baseUrl):
+def locate_and_donwload_pdfs(path, baseUrl):
    page = urllib.request.urlopen(baseUrl)
    soup = BeautifulSoup(page, 'html.parser')
    scanning = False
